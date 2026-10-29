@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Web Portfolio Imam Khuzaeni</title>
+    <link rel="stylesheet" href="webporto.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <a href="#home"><span>Imam Khuzaeni</span></a>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">What I Can Do</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#achievements">Achievement</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#contact">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">What I Can Do</a>
+                <a href="#achievements">Achievement</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <div class="hero-frame">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <img src="image.jpeg" alt="Foto profil">
+                </div>
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Halo, I'am <span>Imam Khuzaeni</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Selamat datang di portofolio saya. Saya adalah seorang developer yang sangat suka membangun sistem yang tidak hanya cepat dan nyaman dipakai, tapi juga aman dari ancaman siber. </p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com/imamzaenn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://id.linkedin.com/in/imam-khuzaeni-73167b392" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/imam_kzn?vrfl=cmtmem5iM2M5dnJz" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <a href="https://drive.google.com/file/d/1WMRRb2IxiGup9W1Dkq7f-1DeG1cg0qcQ/view?usp=sharing" class="btn-cv" target="_blank" rel="noopener">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="page-section">
+        <div class="wrap">
+            <div class="section-title" data-aos="fade-up">
+                <h2>About <span>Me</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-photo card" data-aos="zoom-in-right" data-aos-duration="1000">
+                    <div class="about-frame"><i class="fa-solid fa-user-shield"></i><img src="Imam.jpeg" alt="Foto Imam Khuzaeni"></div>
+                </div>
+
+                <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
+                    <h3>Sedikit Cerita Tentang Saya</h3>
+                    <p>Saat ini saya sedang menempuh pendidikan S1 Informatika di Universitas Negeri Surabaya. Saya sangat tertarik dengan dunia developer dan cybersecurity. Dua bidang yang menurut saya saling melengkapi dalam membangun teknologi masa kini. Saya selalu bersemangat untuk mengasah kemampuan coding, mempelajari arsitektur keamanan sistem, dan berkolaborasi dalam menciptakan proyek web maupun aplikasi yang inovatif.</p>
+                    <ul class="about-info">
+                        <li><b>Nama:</b> Imam Khuzaeni</li>
+                        <li><b>Email:</b> imamkhuzaeni9@gmail.com</li>
+                        <li><b>Alamat:</b> Jl. Ronomenggolo RT/RW 10/02 Ds. Segodobancang, Kec. Tarik Kab. Sidoarjo</li>
+                        <li><b>Status:</b> Mahasiswa</li>
+                    </ul>
+
+                    <a href="#contact" class="btn-main">Hubungi Saya</a>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat card" data-aos="fade-up" data-aos-delay="100">
+                    <strong><span class="count" data-target="0">0</span>+</strong>
+                    <span>Proyek selesai</span>
+                </div>
+                <div class="stat card" data-aos="fade-up" data-aos-delay="200">
+                    <strong><span class="count" data-target="0">0</span>+</strong>
+                    <span>Tahun pengalaman</span>
+                </div>
+                <div class="stat card" data-aos="fade-up" data-aos-delay="300">
+                    <strong><span class="count" data-target="0">0</span>+</strong>
+                    <span>Lab &amp; CTF selesai</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT I CAN DO -->
+    <section id="skills" class="page-section">
+        <div class="wrap">
+            <div class="section-title" data-aos="fade-up">
+                <h2>What I <span>Can Do</span></h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-box card" data-aos="fade-right" data-aos-duration="1000">
+                    <h3><i class="fa-solid fa-code"></i>Development</h3>
+                    <div class="skill">
+                        <div class="skill-head"><span>HTML &amp; CSS</span><span>25%</span></div>
+                        <div class="bar"><span data-level="25"></span></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-head"><span>JavaScript</span><span>5%</span></div>
+                        <div class="bar"><span data-level="5"></span></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-head"><span>Responsive Design</span><span>10%</span></div>
+                        <div class="bar"><span data-level="10"></span></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-head"><span>Git &amp; GitHub</span><span>2%</span></div>
+                        <div class="bar"><span data-level="2"></span></div>
+                    </div>
+                </div>
+
+                <div class="skill-box card" data-aos="fade-left" data-aos-duration="1000">
+                    <h3><i class="fa-solid fa-shield-halved"></i>Cyber Security</h3>
+                    <div class="skill">
+                        <div class="skill-head"><span>Network Security</span><span>10%</span></div>
+                        <div class="bar"><span data-level="10"></span></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-head"><span>Web Security (OWASP)</span><span>2%</span></div>
+                        <div class="bar"><span data-level="2"></span></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-head"><span>Penetration Testing</span><span>5%</span></div>
+                        <div class="bar"><span data-level="5"></span></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-head"><span>Linux &amp; Command Line</span><span>1%</span></div>
+                        <div class="bar"><span data-level="1"></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tools" data-aos="fade-up">
+                <h3>Tools yang bisa saya gunakan</h3>
+                <div class="tag-list">
+                    <span class="tag">VS Code</span>
+                    <span class="tag">Kali Linux</span>
+                    <span class="tag">Wireshark</span>
+                    <span class="tag">Burp Suite</span>
+                    <span class="tag">Nmap</span>
+                    <span class="tag">GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENT -->
+    <section id="achievements" class="page-section">
+        <div class="wrap">
+            <div class="section-title" data-aos="fade-up">
+                <h2><span>Achievement</span></h2>
+            </div>
+
+            <div class="achv-grid" id="achvGrid">
+
+                <article class="achv card" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="achv-photo">
+                        <i class="fa-solid fa-trophy"></i>
+                        <img src="Sertif1.jpeg" alt="Bukti pencapaian 1" onerror="this.style.display='none'">
+                    </div>
+                    <div class="achv-body">
+                        <div class="achv-year"><i class="fa-solid fa-calendar-days"></i> 2024</div>
+                        <h3>Juara Harapan 2 LKBB MAHAPATIH S3 tingkat Nasional</h3>
+                        <div class="achv-org"><i class="fa-solid fa-building-columns"></i> SMKN 1 Jetis Mojokerto </div>
+                        <p>Juara Harapan 2 dari 40 sekolah LKBB MAHAPATIH S3 tingkat Nasional yang diselenggarakan oleh SMKN 1 Jetis Mojokerto.</p>
+                    </div>
+                </article>
+
+                <article class="achv card" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="achv-photo">
+                        <i class="fa-solid fa-trophy"></i>
+                        <img src="Sertif2.jpeg" alt="Bukti pencapaian 2" onerror="this.style.display='none'">
+                    </div>
+                    <div class="achv-body">
+                        <div class="achv-year"><i class="fa-solid fa-calendar-days"></i> 2024 </div>
+                        <h3>Juara Madya LKBB GALAKSI Se-Pulau Jawa</h3>
+                        <div class="achv-org"><i class="fa-solid fa-building-columns"></i> SMAN 2 Kota Kediri </div>
+                        <p>Juara Madya 1 dari 50 sekolah LKBB GALAKSI Se-Pulau Jawa yang diselenggarakan oleh SMAN 2 Kota Kediri.</p>
+                    </div>
+                </article>
+
+                <article class="achv card" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="achv-photo">
+                        <i class="fa-solid fa-trophy"></i>
+                        <img src="Sertif3.jpeg" alt="Bukti pencapaian 3" onerror="this.style.display='none'">
+                    </div>
+                    <div class="achv-body">
+                        <div class="achv-year"><i class="fa-solid fa-calendar-days"></i> 2026</div>
+                        <h3>Siswa Tersertifikasi Gemini</h3>
+                        <div class="achv-org"><i class="fa-solid fa-building-columns"></i> Google for Education</div>
+                        <p>Sertifikat kualifikasi atas pencapaian pengetahuan yang diperlukan untuk menggunakan AI Google di lingkungan pendidikan yang diterbitkan oleh Google for Education.</p>
+                    </div>
+                </article>
+
+                 <article class="achv card" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="achv-photo">
+                        <i class="fa-solid fa-trophy"></i>
+                        <img src="Sertif4.jpeg" alt="Bukti pencapaian 2" onerror="this.style.display='none'">
+                    </div>
+                    <div class="achv-body">
+                        <div class="achv-year"><i class="fa-solid fa-calendar-days"></i> 2026 </div>
+                        <h3>Training Completion: Financial Literacy and Soft Skill</h3>
+                        <div class="achv-org"><i class="fa-solid fa-building-columns"></i>DBS Foundation & Plan Indonesia</div>
+                        <p>Sertifikat kelulusan modul "Financial Literacy and Soft Skill" sebagai bagian dari program Youth be Ready, Inclusive, Skilled, and Empowered Programme (You RISE) yang diselenggarakan oleh DBS Foundation dan Plan Indonesia.</p>
+                    </div>
+                </article>
+
+                <article class="achv card" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="achv-photo">
+                        <i class="fa-solid fa-trophy"></i>
+                        <img src="Sertif5.jpeg" alt="Bukti pencapaian 2" onerror="this.style.display='none'">
+                    </div>
+                    <div class="achv-body">
+                        <div class="achv-year"><i class="fa-solid fa-calendar-days"></i> 2026 </div>
+                        <h3>Peserta Gather & Grow: Entrepreneurship of UNESA 2026l</h3>
+                        <div class="achv-org"><i class="fa-solid fa-building-columns"></i>UKM Kewirausahaan Universitas Negeri Surabaya</div>
+                        <p>Sertifikat sebagai peserta dalam kegiatan Gather & Grow: Entrepreneurship of UNESA 2026 bertema "From Around You To Business For You" yang diselenggarakan oleh UKM Kewirausahaan Universitas Negeri Surabaya. </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- perbesar foto bukti -->
+    <div class="modal" id="photoModal" role="dialog" aria-modal="true" aria-label="Foto bukti pencapaian">
+        <div class="modal-box photo-box">
+            <button class="modal-close" id="modalClose" aria-label="Tutup">&times;</button>
+            <img id="modalImg" alt="">
+            <div class="post-meta" id="modalCaption"></div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="page-section">
+        <div class="wrap">
+            <div class="section-title" data-aos="fade-up">
+                <h2><span>Contact</span></h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info card" data-aos="fade-right" data-aos-duration="1000">
+                    <h3>Mari bekerja sama</h3>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div><small>Email</small><strong>imamkhuzaeni9@gmail.com</strong></div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div><small>Telepon</small><strong>081999273052</strong></div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div><small>Alamat</small><strong>Jl. Ronomenggolo RT/RW 10/02 Ds. Segodobancang, Kec. Tarik Kab. Sidoarjo</strong></div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form card" id="contactForm" novalidate data-aos="fade-left" data-aos-duration="1000">
+                    <div class="field">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="name">
+                        <span class="msg">Nama wajib diisi.</span>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                        <span class="msg">Masukkan alamat email yang valid.</span>
+                    </div>
+                    <div class="field">
+                        <label for="subject">Subjek</label>
+                        <input type="text" id="subject" name="subject">
+                        <span class="msg">Subjek wajib diisi.</span>
+                    </div>
+                    <div class="field">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" placeholder="Tulis pesan Anda"></textarea>
+                        <span class="msg">Pesan minimal 10 karakter.</span>
+                    </div>
+                    <button type="submit" class="btn-main">Kirim Pesan</button>
+                    <p class="form-status" id="formStatus" role="status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrap">
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0, once:true});
+    </script>
+    <script>
+        /* Menu mobile */
+        function hamburg(){
+            document.querySelector(".dropdown").style.transform = "translateY(0px)";
+        }
+        function cancel(){
+            document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+        }
+        document.querySelectorAll(".dropdown .links a").forEach(function(a){
+            a.addEventListener("click", cancel);
+        });
+
+        /* Menu aktif saat scroll */
+        var sections = document.querySelectorAll("section[id]");
+        var navLinks = document.querySelectorAll(".nav-container .links a");
+        var spy = new IntersectionObserver(function(entries){
+            entries.forEach(function(entry){
+                if(entry.isIntersecting){
+                    navLinks.forEach(function(a){
+                        var on = a.getAttribute("href") === "#" + entry.target.id;
+                        a.classList.toggle("active", on);
+                        if(a.parentElement.classList.contains("contact-btn")){
+                            a.parentElement.classList.toggle("active", on);
+                        }
+                    });
+                }
+            });
+        }, {rootMargin: "-45% 0px -50% 0px"});
+        sections.forEach(function(s){ spy.observe(s); });
+
+        /* angka & bar skill */
+        function animateCount(el){
+            var target = +el.dataset.target, cur = 0;
+            var step = Math.max(1, Math.ceil(target / 60));
+            var timer = setInterval(function(){
+                cur += step;
+                if(cur >= target){ cur = target; clearInterval(timer); }
+                el.textContent = cur;
+            }, 25);
+        }
+        var reveal = new IntersectionObserver(function(entries){
+            entries.forEach(function(entry){
+                if(!entry.isIntersecting) return;
+                var el = entry.target;
+                if(el.classList.contains("count")) animateCount(el);
+                if(el.dataset.level) el.style.width = el.dataset.level + "%";
+                reveal.unobserve(el);
+            });
+        }, {threshold: 0.4});
+        document.querySelectorAll(".count, .bar span").forEach(function(el){ reveal.observe(el); });
+
+        /* Achievement */
+        var achvGrid = document.getElementById("achvGrid");
+        var modal = document.getElementById("photoModal");
+        var modalImg = document.getElementById("modalImg");
+
+        achvGrid.addEventListener("click", function(e){
+            var box = e.target.closest(".achv-photo");
+            if(!box) return;
+            var img = box.querySelector("img");
+            if(!img || img.style.display === "none") return;
+            var card = box.closest(".achv");
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+            document.getElementById("modalCaption").textContent =
+                card.querySelector("h3").textContent + " \u2022 " +
+                card.querySelector(".achv-year").textContent.trim() + " \u2022 " +
+                card.querySelector(".achv-org").textContent.trim();
+            modal.classList.add("open");
+            document.body.style.overflow = "hidden";
+        });
+        function closeModal(){
+            modal.classList.remove("open");
+            document.body.style.overflow = "";
+        }
+        document.getElementById("modalClose").addEventListener("click", closeModal);
+        modal.addEventListener("click", function(e){ if(e.target === modal) closeModal(); });
+        document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeModal(); });
+
+        /* Form kontak */
+        var MY_EMAIL = "imamkhuzaeni9@gmail.com";
+
+        var form = document.getElementById("contactForm");
+        var status = document.getElementById("formStatus");
+
+        function validate(id, test){
+            var input = document.getElementById(id);
+            var ok = test(input.value.trim());
+            input.parentElement.classList.toggle("error", !ok);
+            return ok;
+        }
+
+        form.addEventListener("submit", function(e){
+            e.preventDefault();
+            var okName    = validate("name",    function(v){ return v.length > 0; });
+            var okEmail   = validate("email",   function(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); });
+            var okSubject = validate("subject", function(v){ return v.length > 0; });
+            var okMessage = validate("message", function(v){ return v.length >= 10; });
+
+            if(!(okName && okEmail && okSubject && okMessage)){
+                status.textContent = "Periksa kembali kolom yang ditandai merah.";
+                return;
+            }
+
+            var name = document.getElementById("name").value.trim();
+            var email = document.getElementById("email").value.trim();
+            var subject = document.getElementById("subject").value.trim();
+            var message = document.getElementById("message").value.trim();
+
+            var body = "Nama: " + name + "\nEmail: " + email + "\n\n" + message;
+            window.location.href = "mailto:" + MY_EMAIL +
+                "?subject=" + encodeURIComponent(subject) +
+                "&body=" + encodeURIComponent(body);
+
+            status.textContent = "Terima kasih, " + name + "! Aplikasi email Anda akan terbuka. Tekan kirim di sana.";
+            form.reset();
+        });
+
+        form.querySelectorAll("input, textarea").forEach(function(el){
+            el.addEventListener("input", function(){ el.parentElement.classList.remove("error"); });
+        });
+
+        /* Gambar Home & About */
+        var IMAGES = {
+            home:  "image.jpeg",
+            about: "Imam.jpeg"
+        };
+
+        function loadImage(id, file){
+            var img = document.getElementById(id);
+            img.onerror = function(){ img.style.display = "none"; };
+            img.src = file;
+        }
+        loadImage("heroImg", IMAGES.home);
+        loadImage("aboutImg", IMAGES.about);
+
+    </script>
+</body>
+</html>
